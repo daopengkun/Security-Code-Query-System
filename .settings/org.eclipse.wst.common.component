@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Anti-counterfeit code query system">
+    <wb-module deploy-name="Security Code Query System">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Anti-counterfeit_code_query_system"/>
-        <property name="java-output-path" value="/Anti-counterfeit code query system/build/classes"/>
+        <property name="java-output-path" value="/Security Code Query System/build/classes"/>
     </wb-module>
 </project-modules>
