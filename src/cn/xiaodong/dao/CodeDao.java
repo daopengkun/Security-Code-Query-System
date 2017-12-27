@@ -1,9 +1,9 @@
 package cn.xiaodong.dao;
 
 /**
- * ·ÀÎ±Âë dao²Ù×÷
+ * é˜²ä¼ªç ç±»
  * 
- * @author ÖìÏş¶«
+ * @author æœ±æ™“ä¸œ
  *
  */
 public class CodeDao {
