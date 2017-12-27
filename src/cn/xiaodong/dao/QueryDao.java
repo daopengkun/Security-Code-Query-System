@@ -1,9 +1,9 @@
 package cn.xiaodong.dao;
 
 /**
- * ²éÑ¯ÀúÊ·dao²Ù×÷
+ * é˜²ä¼ªç æŸ¥è¯¢å†å²daoæ“ä½œ
  * 
- * @author ÖìÏş¶«
+ * @author æœ±æ™“ä¸œ
  *
  */
 public class QueryDao {

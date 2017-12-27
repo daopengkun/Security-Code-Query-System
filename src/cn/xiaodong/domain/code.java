@@ -1,26 +1,26 @@
 package cn.xiaodong.domain;
 
 /**
- * ·ÀÎ±ÂëÀà
+ * é˜²ä¼ªç ç±»
  * 
- * @author ÖìÏş¶«
+ * @author æœ±æ™“ä¸œ
  *
  */
 public class code {
 	
-	//·ÀÎ±Âë±àºÅ
+	//é˜²ä¼ªç id
 	private int id;
 	
-	//²úÆ··ÀÎ±Âë±àºÅ
+	//é˜²ä¼ªç å†…å®¹
 	private char code;
 	
-	//²úÆ·Éú²ú¹«Ë¾	
+	//äº§å“ç”Ÿäº§å‚å®¶
 	private char company;
 	
-	//·ÀÎ±Âë²éÑ¯µÄ´ÎÊı
+	//é˜²ä¼ªç æŸ¥è¯¢æ¬¡æ•°
 	private char queryTimes;
 
-	//GetºÍSetº¯Êı
+
 	public int getId() {
 		return id;
 	}

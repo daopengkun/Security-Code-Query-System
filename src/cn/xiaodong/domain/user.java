@@ -1,25 +1,25 @@
 package cn.xiaodong.domain;
 /**
- * ¹ÜÀíÔ±Àà
+ * ç®¡ç†å‘˜ç”¨æˆ·ç±»
  * 
- * @author ÖìÏş¶«
+ * @author æœ±æ™“ä¸œ
  *
  */
 public class user {
 	
-	//¹ÜÀíÔ±±àºÅ
+	//ç®¡ç†å‘˜è´¦æˆ·id
 	private int id;
 	
-	//¹ÜÀíÔ±ÓÃ»§Ãû
+	//ç®¡ç†å‘˜ç”¨æˆ·å
 	private char username;
 	
-	//¹ÜÀíÔ±°²È«ÑéÖ¤ÓÊÏä
+	//ç®¡ç†å‘˜å®‰å…¨éªŒè¯é‚®ç®±
 	private char email;
 	
-	//°²È«ÑéÖ¤Âë
+	//å®‰å…¨éªŒè¯ç 
 	private char securityCode;
 
-	//GetºÍSetº¯Êı
+	
 	public int getId() {
 		return id;
 	}

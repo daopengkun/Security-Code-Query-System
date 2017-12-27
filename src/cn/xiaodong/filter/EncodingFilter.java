@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 /**
- * Í³Ò»±àÂë
+ * ç»Ÿä¸€ç¼–ç 
  * @author Administrator
  *
  */
@@ -28,11 +28,11 @@ public class EncodingFilter implements Filter {
 	
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
-		//1.Ç¿×ª
+		//1.å¼ºè½¬
 		HttpServletRequest request=(HttpServletRequest) req;
 		HttpServletResponse response=(HttpServletResponse) resp;
 		
-		//2.·ÅĞĞ¡Œ
+		//2.æ”¾è¡Œî”‘
 		chain.doFilter(new MyRequest(request), response);
 	}
 
@@ -89,9 +89,9 @@ class MyRequest extends HttpServletRequestWrapper{
 	public Map<String,String[]> getParameterMap() {  
 		
 		/**
-		 * Ê×ÏÈÅĞ¶ÏÇëÇó·½Ê½
-		 * ÈôÎªpost  request.setchar...(utf-8)
-		 * ÈôÎªget ½«mapÖĞµÄÖµ±éÀú±àÂë¾Í¿ÉÒÔÁË
+		 * é¦–å…ˆåˆ¤æ–­è¯·æ±‚æ–¹å¼
+		 * è‹¥ä¸ºpost  request.setchar...(utf-8)
+		 * è‹¥ä¸ºget å°†mapä¸­çš„å€¼éå†ç¼–ç å°±å¯ä»¥äº†
 		 */
 		String method = request.getMethod();
 		if("post".equalsIgnoreCase(method)){
@@ -107,9 +107,9 @@ class MyRequest extends HttpServletRequestWrapper{
 			if(flag){
 				for (String key:map.keySet()) {
 					String[] arr = map.get(key);
-					//¼ÌĞø±éÀúÊı×é
+					//ç»§ç»­éå†æ•°ç»„
 					for(int i=0;i<arr.length;i++){
-						//±àÂë
+						//ç¼–ç 
 						try {
 							arr[i]=new String(arr[i].getBytes("iso8859-1"),"utf-8");
 						} catch (UnsupportedEncodingException e) {
@@ -119,7 +119,7 @@ class MyRequest extends HttpServletRequestWrapper{
 				}
 				flag=false;
 			}
-			//ĞèÒª±éÀúmap ĞŞ¸ÄvalueµÄÃ¿Ò»¸öÊı¾İµÄ±àÂë
+			//éœ€è¦éå†map ä¿®æ”¹valueçš„æ¯ä¸€ä¸ªæ•°æ®çš„ç¼–ç 
 			
 			return map;
 		}

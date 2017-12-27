@@ -1,9 +1,9 @@
 package cn.xiaodong.dao;
 
 /**
- * ¹ÜÀíÔ±ÓÃ»§dao²Ù×÷
+ * ç®¡ç†å‘˜ç”¨æˆ·daoæ“ä½œ
  * 
- * @author ÖìÏş¶«
+ * @author æœ±æ™“ä¸œ
  *
  */
 public class UserDao {
