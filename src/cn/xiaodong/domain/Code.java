@@ -6,7 +6,7 @@ package cn.xiaodong.domain;
  * @author 朱晓东
  *
  */
-public class code {
+public class Code {
 	
 	//防伪码id
 	private int id;

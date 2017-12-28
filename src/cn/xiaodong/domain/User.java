@@ -5,7 +5,7 @@ package cn.xiaodong.domain;
  * @author 朱晓东
  *
  */
-public class user {
+public class User {
 	
 	//管理员账户id
 	private int id;

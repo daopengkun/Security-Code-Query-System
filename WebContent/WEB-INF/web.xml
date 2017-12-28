@@ -36,18 +36,9 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/UserServlet</url-pattern>
+    <url-pattern>/User</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>userServlet</display-name>
-    <servlet-name>userServlet</servlet-name>
-    <servlet-class>cn.xiaodong.servlet.userServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>userServlet</servlet-name>
-    <url-pattern>/userServlet</url-pattern>
-  </servlet-mapping>
+
   <servlet>
     <description></description>
     <display-name>QueryServlet</display-name>
@@ -56,6 +47,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>QueryServlet</servlet-name>
-    <url-pattern>/QueryServlet</url-pattern>
+    <url-pattern>/Query</url-pattern>
   </servlet-mapping>
 </web-app>

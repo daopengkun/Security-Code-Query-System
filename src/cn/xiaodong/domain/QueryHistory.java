@@ -6,7 +6,7 @@ package cn.xiaodong.domain;
  * @author 朱晓东
  *
  */
-public class query {
+public class QueryHistory {
 	
 	//查询历史id
 	private int id;
