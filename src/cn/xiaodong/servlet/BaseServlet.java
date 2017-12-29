@@ -51,4 +51,12 @@ public class BaseServlet extends HttpServlet {
 		return null;
 	}
 	
+//	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+//		this.service(request, response);
+//	}
+//	
+//	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+//		this.doGet(request, response);
+//	}
+//	
 }
