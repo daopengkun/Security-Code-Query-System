@@ -14,6 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
 public class BaseServlet extends HttpServlet {
+	
+	/**
+	 * 
+	 */
 	@Override
 	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
@@ -51,12 +55,4 @@ public class BaseServlet extends HttpServlet {
 		return null;
 	}
 	
-//	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-//		this.service(request, response);
-//	}
-//	
-//	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-//		this.doGet(request, response);
-//	}
-//	
 }

@@ -14,7 +14,7 @@ import org.apache.commons.beanutils.BeanUtils;
 import cn.xiaodong.domain.QueryRequest;
 import cn.xiaodong.service.QueryService;
 
-public class QueryServlet extends HttpServlet {
+public class QueryServlet extends BaseServlet {
 	
 	/**
 	 * 根据提交的表单查询结果

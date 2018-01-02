@@ -38,7 +38,6 @@
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/User</url-pattern>
   </servlet-mapping>
-
   <servlet>
     <description></description>
     <display-name>QueryServlet</display-name>
@@ -48,5 +47,25 @@
   <servlet-mapping>
     <servlet-name>QueryServlet</servlet-name>
     <url-pattern>/Query</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ImportCodeServlet</display-name>
+    <servlet-name>ImportCodeServlet</servlet-name>
+    <servlet-class>cn.xiaodong.servlet.ImportCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImportCodeServlet</servlet-name>
+    <url-pattern>/ImportCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateCodeServlet</display-name>
+    <servlet-name>CreateCodeServlet</servlet-name>
+    <servlet-class>cn.xiaodong.servlet.CreateCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCodeServlet</servlet-name>
+    <url-pattern>/CreateCodeServlet</url-pattern>
   </servlet-mapping>
 </web-app>
