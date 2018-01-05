@@ -15,8 +15,14 @@ import cn.xiaodong.utils.DataSourceUtils;
  */
 public class UserDao {
 	
-	public User getByUsernameAndPassword(String username, String password) throws Exception {
-		// TODO 自动生成的方法存根
+	/**
+	 * 根据用户名和密码，查询到用户的详细信息
+	 * @param username
+	 * @param password
+	 * @return
+	 * @throws Exception
+	 */
+	public static User getByUsernameAndPassword(String username, String password) throws Exception {
 		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql="select * from user where username=? and password=? limit 1";
 		return qr.query(sql, new BeanHandler<>(User.class),username,password);

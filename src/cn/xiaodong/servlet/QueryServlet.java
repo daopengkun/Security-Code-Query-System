@@ -29,16 +29,21 @@ public class QueryServlet extends BaseServlet {
 	 */
 	public String Query(HttpServletRequest request, HttpServletResponse response) throws IllegalAccessException, InvocationTargetException, SQLException, AddressException, MessagingException{
 		
+		//测试信息
+		System.out.println("QueryServlet  Query方法已经执行。");
+		
 		//1.获取表单信息
 		QueryRequest qr = new QueryRequest();
 		BeanUtils.populate(qr, request.getParameterMap());
 		
 		//2.执行查询操作
-		QueryService qs = new QueryService();
-		qs.Query(qr);
+		QueryService.Query(qr);
 		
 		//3.页面转跳到查询成功页面
-		return "WEB-INF/reminder.html";
+		String msg;
+		msg = "查询结果已经发送到您的邮箱，请注意查收";
+		request.setAttribute("msg", msg);
+		return "WEB-INF/reminder.jsp";
 		
 	}
 	

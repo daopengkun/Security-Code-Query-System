@@ -9,49 +9,50 @@ package cn.xiaodong.domain;
 public class QueryHistory {
 	
 	//查询历史id
-	private int id;
+	private String id;
 	
 	//查询的防伪码
-	private char code;
+	private String code;
 	
 	//本次接受查询结果使用的邮箱
-	private char email;
+	private String email;
 	
 	//本次查询的时间
-	private char time;
+	private String time;
 
-
-	public int getId() {
+	
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public char getCode() {
+	public String getCode() {
 		return code;
 	}
 
-	public void setCode(char code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 
-	public char getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(char email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public char getTime() {
+	public String getTime() {
 		return time;
 	}
 
-	public void setTime(char time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
+
 	
 	
 }

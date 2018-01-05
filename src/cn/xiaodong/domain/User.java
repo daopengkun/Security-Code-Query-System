@@ -11,13 +11,13 @@ public class User {
 	private int id;
 	
 	//管理员用户名
-	private char username;
+	private String username;
 	
 	//管理员安全验证邮箱
-	private char email;
+	private String email;
 	
 	//安全验证码
-	private char securityCode;
+	private String securityCode;
 
 	
 	public int getId() {
@@ -28,27 +28,27 @@ public class User {
 		this.id = id;
 	}
 
-	public char getUsername() {
+	public String getUsername() {
 		return username;
 	}
 
-	public void setUsername(char username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 
-	public char getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(char email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public char getSecurityCode() {
+	public String getSecurityCode() {
 		return securityCode;
 	}
 
-	public void setSecurityCode(char securityCode) {
+	public void setSecurityCode(String securityCode) {
 		this.securityCode = securityCode;
 	}
 

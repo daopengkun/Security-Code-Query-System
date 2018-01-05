@@ -9,49 +9,49 @@ package cn.xiaodong.domain;
 public class Code {
 	
 	//防伪码id
-	private int id;
+	private String id;
 	
 	//防伪码内容
-	private char code;
+	private String code;
 	
 	//产品生产厂家
-	private char company;
+	private String company;
 	
 	//防伪码查询次数
-	private char queryTimes;
+	private int queryTimes;
 
-
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public char getCode() {
+	public String getCode() {
 		return code;
 	}
 
-	public void setCode(char code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 
-	public char getCompany() {
+	public String getCompany() {
 		return company;
 	}
 
-	public void setCompany(char company) {
+	public void setCompany(String company) {
 		this.company = company;
 	}
 
-	public char getQueryTimes() {
+	public int getQueryTimes() {
 		return queryTimes;
 	}
 
-	public void setQueryTimes(char queryTimes) {
+	public void setQueryTimes(int queryTimes) {
 		this.queryTimes = queryTimes;
 	}
+
 	
 	
 

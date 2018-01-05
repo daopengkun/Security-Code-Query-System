@@ -5,6 +5,38 @@
 		<title>管理系统</title>
 	</head>
 	<body>
-		
+		<table border="1px" align="center" cellpadding="0px" cellspacing="0px"
+			width="900px">
+			<!-- 第一行，通过Excel文件方式，向系统导入防伪码-->
+			<tr height="300px">
+				<td>
+					<table border="0px" align="center" cellpadding="0px" cellspacing="0px"
+						width="500px">
+						<tr height="65px" align="center">
+							<td>导入防伪码(以Excel文件的方式)</td>
+						</tr>
+						<form action="ImportCode?method=ImportCode" method="post">
+						<tr height="65px" align="center">
+							<td>
+								<input type="file" name="ExcelFile" required="required"/>
+							</td>
+						</tr>
+						<tr height="65px" align="center">
+							<td>
+								<input type="submit" name="submit" value="导入防伪码"/>
+							</td>
+						</tr>
+						</form>
+					</table>
+				</td>
+			</tr>
+			
+			<!-- 第二行，生成防伪码，并通过Excel文件的方式下载-->
+			<tr>
+				<td>
+					
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>

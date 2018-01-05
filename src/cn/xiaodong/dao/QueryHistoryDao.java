@@ -27,7 +27,17 @@ public class QueryHistoryDao {
 		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql="select * from query where code=? limit 1";
 		return qr.query(sql, new BeanHandler<>(QueryHistory.class),code);
+	}
+	
+	/**
+	 * 添加新的查询历史
+	 * @param qh
+	 * @throws SQLException
+	 */
+	public static void add(QueryHistory qh) throws SQLException {
 		// TODO 自动生成的方法存根
-		
+		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
+		String sql="insert into query values(?,?, ?,?)";
+		qr.update(sql, qh.getId(), qh.getCode(), qh.getEmail(), qh.getTime() );
 	}
 }
